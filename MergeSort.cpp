@@ -41,3 +41,8 @@ void mergeSort(int low, int high) {
     // Step 3: Membagi array secara rekursif
     mergeSort(low, mid);        // Bagian kiri
     mergeSort(mid + 1, high);   // Bagian kanan
+
+    // Step 4: Proses penggabungan (Merging)
+    int i = low;      // Index untuk bagian kiri
+    int j = mid + 1;  // Index untuk bagian kanan
+    int k = low;      // Index untuk array sementara B
