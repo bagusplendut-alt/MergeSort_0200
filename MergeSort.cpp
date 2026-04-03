@@ -26,3 +26,11 @@ void input() {
         cout << "Array index ke - " << i << " : ";
         cin >> arr[i];
     }
+}
+
+// Fungsi mergeSort dengan pendekatan Divide and Conquer
+void mergeSort(int low, int high) {
+    // Step 1: Base case - jika sub-array hanya memiliki 1 elemen
+    if (low >= high) {
+        return;
+    }
