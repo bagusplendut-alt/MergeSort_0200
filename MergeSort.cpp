@@ -34,3 +34,6 @@ void mergeSort(int low, int high) {
     if (low >= high) {
         return;
     }
+
+    // Step 2: Mencari titik tengah (mid)
+    int mid = (low + high) / 2;
