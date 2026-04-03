@@ -37,3 +37,7 @@ void mergeSort(int low, int high) {
 
     // Step 2: Mencari titik tengah (mid)
     int mid = (low + high) / 2;
+
+    // Step 3: Membagi array secara rekursif
+    mergeSort(low, mid);        // Bagian kiri
+    mergeSort(mid + 1, high);   // Bagian kanan
