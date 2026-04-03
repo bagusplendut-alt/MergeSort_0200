@@ -58,3 +58,23 @@ void mergeSort(int low, int high) {
         }
         k++;
     }
+
+    // Step 4.e: Memindahkan sisa elemen dari bagian kanan jika ada
+    while (j <= high) {
+        B[k] = arr[j];
+        j++;
+        k++;
+    }
+
+    // Step 4.f: Memindahkan sisa elemen dari bagian kiri jika ada
+    while (i <= mid) {
+        B[k] = arr[i];
+        i++;
+        k++;
+    }
+
+    // Step 5: Menyalin elemen dari array sementara B kembali ke array asli
+    for (int x = low; x <= high; x++) {
+        arr[x] = B[x];
+    }
+}
